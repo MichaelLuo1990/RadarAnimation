@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_radar_border"
+    android:background="@drawable/radar_bg">
+
+    <!-- 雷达扫描view -->
+
+    <com.michael.radar.radarview.RadarView
+        android:id="@+id/image_radar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/radar_image" />
+
+    <!-- 中心圆头像 -->
+
+    <RelativeLayout
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/head_image_bg">
+
+        <com.michael.radar.circleimage.CircularImage
+            android:id="@+id/ci_head"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/head_image" />
+    </RelativeLayout>
+
+</RelativeLayout>
